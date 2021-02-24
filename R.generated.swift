@@ -170,6 +170,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  struct reuseIdentifier {
+    /// Reuse identifier `ARCHomeTextCell`.
+    static let arcHomeTextCell: Rswift.ReuseIdentifier<ARCHomeTextCell> = Rswift.ReuseIdentifier(identifier: "ARCHomeTextCell")
+
+    fileprivate init() {}
+  }
+
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
     /// This `R.string.arcString` struct is generated, and contains static references to 1 localization keys.

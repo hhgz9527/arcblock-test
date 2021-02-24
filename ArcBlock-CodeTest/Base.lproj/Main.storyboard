@@ -31,8 +31,80 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="paP-S1-Iua">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ARCHomeTextCell" rowHeight="161" id="Qlc-Tq-pWN" customClass="ARCHomeTextCell" customModule="ArcBlock_CodeTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="161"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qlc-Tq-pWN" id="v0e-EQ-bdz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="161"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAV-VH-JQd">
+                                                    <rect key="frame" x="5" y="8" width="404" height="145"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="首先，感谢您抽出宝贵的时间进行 Coding Test, 这个 Coding Test 的目标是实现一个多类型的列表页以及对应的详情页面，您可以自由发挥实现整体效果，我们将根据您的最终作品做一个评估考核。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NII-CM-41o">
+                                                            <rect key="frame" x="16" y="16" width="372" height="76.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021-2-24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRK-JT-iQf">
+                                                            <rect key="frame" x="16" y="95.5" width="372" height="15"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjq-QK-a1K">
+                                                            <rect key="frame" x="16" y="114.5" width="372" height="15"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="NII-CM-41o" secondAttribute="trailing" constant="16" id="139-c5-iRi"/>
+                                                        <constraint firstItem="NII-CM-41o" firstAttribute="top" secondItem="gAV-VH-JQd" secondAttribute="top" constant="16" id="3cj-J1-3SJ"/>
+                                                        <constraint firstItem="mRK-JT-iQf" firstAttribute="leading" secondItem="NII-CM-41o" secondAttribute="leading" id="HOs-od-WFO"/>
+                                                        <constraint firstItem="Yjq-QK-a1K" firstAttribute="top" secondItem="mRK-JT-iQf" secondAttribute="bottom" constant="4" id="LlO-aG-N9k"/>
+                                                        <constraint firstItem="mRK-JT-iQf" firstAttribute="trailing" secondItem="NII-CM-41o" secondAttribute="trailing" id="nsL-Jt-ZxH"/>
+                                                        <constraint firstItem="mRK-JT-iQf" firstAttribute="top" secondItem="NII-CM-41o" secondAttribute="bottom" constant="3" id="otu-bo-GeI"/>
+                                                        <constraint firstItem="NII-CM-41o" firstAttribute="leading" secondItem="gAV-VH-JQd" secondAttribute="leading" constant="16" id="pDY-BD-qST"/>
+                                                        <constraint firstItem="Yjq-QK-a1K" firstAttribute="trailing" secondItem="mRK-JT-iQf" secondAttribute="trailing" id="sLl-fw-9EI"/>
+                                                        <constraint firstItem="Yjq-QK-a1K" firstAttribute="leading" secondItem="mRK-JT-iQf" secondAttribute="leading" id="w8U-RX-lN5"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="gAV-VH-JQd" secondAttribute="trailing" constant="5" id="Ju3-F8-PJx"/>
+                                                <constraint firstAttribute="bottom" secondItem="gAV-VH-JQd" secondAttribute="bottom" constant="8" id="f0T-vh-rtY"/>
+                                                <constraint firstItem="gAV-VH-JQd" firstAttribute="leading" secondItem="v0e-EQ-bdz" secondAttribute="leading" constant="5" id="mnD-Eg-Eqy"/>
+                                                <constraint firstItem="gAV-VH-JQd" firstAttribute="top" secondItem="v0e-EQ-bdz" secondAttribute="top" constant="8" id="thv-LC-JB0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="bgView" destination="gAV-VH-JQd" id="BYt-Vx-avI"/>
+                                            <outlet property="contentLabel" destination="Yjq-QK-a1K" id="zbG-VX-tR4"/>
+                                            <outlet property="dateLabel" destination="mRK-JT-iQf" id="8aV-VR-pXr"/>
+                                            <outlet property="titleLabel" destination="NII-CM-41o" id="3eS-ow-6nD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="paP-S1-Iua" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SNV-R5-IPa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="paP-S1-Iua" secondAttribute="trailing" id="f0e-eS-lld"/>
+                            <constraint firstItem="paP-S1-Iua" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hVu-dr-gaj"/>
+                            <constraint firstAttribute="bottom" secondItem="paP-S1-Iua" secondAttribute="bottom" id="zsK-aJ-g2k"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="首页" id="LDz-ij-FfZ"/>
                     <connections>
@@ -41,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-678" y="173"/>
+            <point key="canvasLocation" x="-678.26086956521749" y="172.76785714285714"/>
         </scene>
         <!--Home Detail View Controller-->
         <scene sceneID="ESp-cQ-Wkz">
