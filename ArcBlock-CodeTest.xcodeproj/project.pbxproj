@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		62B21F3F25E6304C00381D62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B21F3E25E6304C00381D62 /* AppDelegate.swift */; };
 		62B21F4125E6304C00381D62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B21F4025E6304C00381D62 /* SceneDelegate.swift */; };
-		62B21F4325E6304C00381D62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B21F4225E6304C00381D62 /* ViewController.swift */; };
+		62B21F4325E6304C00381D62 /* ARCHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B21F4225E6304C00381D62 /* ARCHomeViewController.swift */; };
 		62B21F4625E6304C00381D62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B21F4425E6304C00381D62 /* Main.storyboard */; };
 		62B21F4825E6304E00381D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B21F4725E6304E00381D62 /* Assets.xcassets */; };
 		62B21F4B25E6304E00381D62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B21F4925E6304E00381D62 /* LaunchScreen.storyboard */; };
@@ -21,6 +21,7 @@
 		62B21FD625E63CF900381D62 /* ARCParseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B21FD525E63CF900381D62 /* ARCParseData.swift */; };
 		62B21FDC25E6411400381D62 /* ARCLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B21FDB25E6411400381D62 /* ARCLogger.swift */; };
 		62B21FE625E6439600381D62 /* ARCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B21FE525E6439600381D62 /* ARCError.swift */; };
+		62B21FEC25E64C4800381D62 /* ARCHomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B21FEB25E64C4800381D62 /* ARCHomeDetailViewController.swift */; };
 		95A3D695CBF4D54EE5B29928 /* Pods_ArcBlock_CodeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1B9474BED17220A849C97F /* Pods_ArcBlock_CodeTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +46,7 @@
 		62B21F3B25E6304C00381D62 /* ArcBlock-CodeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ArcBlock-CodeTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B21F3E25E6304C00381D62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62B21F4025E6304C00381D62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		62B21F4225E6304C00381D62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62B21F4225E6304C00381D62 /* ARCHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHomeViewController.swift; sourceTree = "<group>"; };
 		62B21F4525E6304C00381D62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62B21F4725E6304E00381D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62B21F4A25E6304E00381D62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		62B21FD525E63CF900381D62 /* ARCParseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCParseData.swift; sourceTree = "<group>"; };
 		62B21FDB25E6411400381D62 /* ARCLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCLogger.swift; sourceTree = "<group>"; };
 		62B21FE525E6439600381D62 /* ARCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCError.swift; sourceTree = "<group>"; };
+		62B21FEB25E64C4800381D62 /* ARCHomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHomeDetailViewController.swift; sourceTree = "<group>"; };
 		BE1B9474BED17220A849C97F /* Pods_ArcBlock_CodeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArcBlock_CodeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6877F9E286E8972191EC4E9 /* Pods-ArcBlock-CodeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcBlock-CodeTest.debug.xcconfig"; path = "Target Support Files/Pods-ArcBlock-CodeTest/Pods-ArcBlock-CodeTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F1CA0AF489F6FD0F9C5626D7 /* Pods-ArcBlock-CodeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcBlock-CodeTest.release.xcconfig"; path = "Target Support Files/Pods-ArcBlock-CodeTest/Pods-ArcBlock-CodeTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,8 +133,8 @@
 				62B21F8925E637B800381D62 /* Model */,
 				62B21F7725E6356B00381D62 /* API */,
 				62B21F3E25E6304C00381D62 /* AppDelegate.swift */,
+				62B21FEA25E64C3500381D62 /* Home */,
 				62B21F4025E6304C00381D62 /* SceneDelegate.swift */,
-				62B21F4225E6304C00381D62 /* ViewController.swift */,
 				62B21F4425E6304C00381D62 /* Main.storyboard */,
 				62B21F4725E6304E00381D62 /* Assets.xcassets */,
 				62B21F4925E6304E00381D62 /* LaunchScreen.storyboard */,
@@ -192,6 +194,15 @@
 				62B21FDB25E6411400381D62 /* ARCLogger.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		62B21FEA25E64C3500381D62 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				62B21F4225E6304C00381D62 /* ARCHomeViewController.swift */,
+				62B21FEB25E64C4800381D62 /* ARCHomeDetailViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		88B77BC556850415F6C54744 /* Frameworks */ = {
@@ -377,7 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62B21FDC25E6411400381D62 /* ARCLogger.swift in Sources */,
-				62B21F4325E6304C00381D62 /* ViewController.swift in Sources */,
+				62B21F4325E6304C00381D62 /* ARCHomeViewController.swift in Sources */,
 				62B21F3F25E6304C00381D62 /* AppDelegate.swift in Sources */,
 				62B21FE625E6439600381D62 /* ARCError.swift in Sources */,
 				62B21FD625E63CF900381D62 /* ARCParseData.swift in Sources */,
@@ -385,6 +396,7 @@
 				62B21F7C25E6358300381D62 /* ARCAPI.swift in Sources */,
 				62B21F8225E6370400381D62 /* ARCHomeAPI.swift in Sources */,
 				62B21F8B25E637CD00381D62 /* ARCTimeline.swift in Sources */,
+				62B21FEC25E64C4800381D62 /* ARCHomeDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
