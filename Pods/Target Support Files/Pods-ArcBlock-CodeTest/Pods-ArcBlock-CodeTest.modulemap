@@ -1,4 +1,4 @@
-module Pods_ArcBlock_CodeTest {
+framework module Pods_ArcBlock_CodeTest {
   umbrella header "Pods-ArcBlock-CodeTest-umbrella.h"
 
   export *
