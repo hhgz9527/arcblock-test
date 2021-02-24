@@ -4,4 +4,5 @@ use_frameworks!
 target 'ArcBlock-CodeTest' do
   pod 'Moya'
   pod 'SwiftyJSON'
+  pod 'R.swift'
 end
