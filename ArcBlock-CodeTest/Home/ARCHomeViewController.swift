@@ -12,6 +12,7 @@ class ARCHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        title = R.string.arcString.home()
     }
 
 

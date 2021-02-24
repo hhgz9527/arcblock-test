@@ -23,6 +23,7 @@
 		62B21FE625E6439600381D62 /* ARCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B21FE525E6439600381D62 /* ARCError.swift */; };
 		62B21FEC25E64C4800381D62 /* ARCHomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B21FEB25E64C4800381D62 /* ARCHomeDetailViewController.swift */; };
 		62B2200725E64D8100381D62 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2200625E64D8100381D62 /* R.generated.swift */; };
+		62B2201525E64DB400381D62 /* ARCString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62B2201725E64DB400381D62 /* ARCString.strings */; };
 		95A3D695CBF4D54EE5B29928 /* Pods_ArcBlock_CodeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1B9474BED17220A849C97F /* Pods_ArcBlock_CodeTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		62B21FE525E6439600381D62 /* ARCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCError.swift; sourceTree = "<group>"; };
 		62B21FEB25E64C4800381D62 /* ARCHomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHomeDetailViewController.swift; sourceTree = "<group>"; };
 		62B2200625E64D8100381D62 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		62B2201625E64DB400381D62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ARCString.strings; sourceTree = "<group>"; };
+		62B2201B25E64DC800381D62 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ARCString.strings"; sourceTree = "<group>"; };
 		BE1B9474BED17220A849C97F /* Pods_ArcBlock_CodeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArcBlock_CodeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6877F9E286E8972191EC4E9 /* Pods-ArcBlock-CodeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcBlock-CodeTest.debug.xcconfig"; path = "Target Support Files/Pods-ArcBlock-CodeTest/Pods-ArcBlock-CodeTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F1CA0AF489F6FD0F9C5626D7 /* Pods-ArcBlock-CodeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcBlock-CodeTest.release.xcconfig"; path = "Target Support Files/Pods-ArcBlock-CodeTest/Pods-ArcBlock-CodeTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,7 +197,8 @@
 		62B21FDA25E6410300381D62 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				62B21FDB25E6411400381D62 /* ARCLogger.swift */,
+				62B2200C25E64D9C00381D62 /* Logger */,
+				62B2200B25E64D9700381D62 /* i18 */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -206,6 +210,22 @@
 				62B21FEB25E64C4800381D62 /* ARCHomeDetailViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		62B2200B25E64D9700381D62 /* i18 */ = {
+			isa = PBXGroup;
+			children = (
+				62B2201725E64DB400381D62 /* ARCString.strings */,
+			);
+			path = i18;
+			sourceTree = "<group>";
+		};
+		62B2200C25E64D9C00381D62 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				62B21FDB25E6411400381D62 /* ARCLogger.swift */,
+			);
+			path = Logger;
 			sourceTree = "<group>";
 		};
 		88B77BC556850415F6C54744 /* Frameworks */ = {
@@ -304,6 +324,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 62B21F3225E6304C00381D62;
 			productRefGroup = 62B21F3C25E6304C00381D62 /* Products */;
@@ -324,6 +345,7 @@
 			files = (
 				62B21F4B25E6304E00381D62 /* LaunchScreen.storyboard in Resources */,
 				62B21F4825E6304E00381D62 /* Assets.xcassets in Resources */,
+				62B2201525E64DB400381D62 /* ARCString.strings in Resources */,
 				62B21F4625E6304C00381D62 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +495,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		62B2201725E64DB400381D62 /* ARCString.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62B2201625E64DB400381D62 /* en */,
+				62B2201B25E64DC800381D62 /* zh-Hans */,
+			);
+			name = ARCString.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -480,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -541,6 +573,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
