@@ -19,7 +19,7 @@ class ARCHomeAPI {
         provider.request(.fetchHomeList) { (result) in
             switch result {
             case .success(let res):
-                let array = ARCParseData.parseArray(data: res.data, methodName: ARCAPI.fetchHomeList.method.rawValue)
+                let array = ARCParseData.parseArray(data: res.data, methodName: ARCAPI.fetchHomeList.path, model: ARCTimeline.self)
             case .failure(let error):
                 break
             }
