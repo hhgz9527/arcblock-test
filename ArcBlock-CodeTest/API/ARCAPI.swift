@@ -89,7 +89,7 @@ public final class NetworkActivityPlugin: PluginType {
 
 
 extension ARCAPI {
-    public static let provider = MoyaProvider<ARCAPI>(plugins: [NetworkActivityPlugin(networkActivityClosure: { (type, targt) in
+    public static let provider = MoyaProvider<ARCAPI>(stubClosure: MoyaProvider<ARCAPI>.immediatelyStub, plugins: [NetworkActivityPlugin(networkActivityClosure: { (type, targt) in
   
     })])
 }

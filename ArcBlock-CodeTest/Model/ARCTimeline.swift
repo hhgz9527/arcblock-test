@@ -8,7 +8,7 @@
 import Foundation
 
 class ARCTimeline: Codable {
-    let id: String?
+    let id: Int?
     let type: String?
     let content: String?
     let imgUrls: [URL?]?
