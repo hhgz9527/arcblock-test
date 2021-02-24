@@ -7,12 +7,22 @@
 
 import Foundation
 import Moya
+import SwiftyJSON
 
 class ARCHomeAPI {
-    static func fetchHomeList() {
-        let provider = MoyaProvider<ARCAPI>()
+    func parse() {
+        
+    }
+    
+    func fetchHomeList() {
+        let provider = ARCAPI.provider
         provider.request(.fetchHomeList) { (result) in
-            
+            switch result {
+            case .success(let res):
+                let array = ARCParseData.parseArray(data: res.data, methodName: ARCAPI.fetchHomeList.method.rawValue)
+            case .failure(let error):
+                break
+            }
         }
     }
 }
