@@ -11,6 +11,6 @@ class ARCTimeline: Codable {
     let id: Int?
     let type: String?
     let content: String?
-    let imgUrls: [URL?]?
+    let imgUrls: [String?]?
     let link: String?
 }
