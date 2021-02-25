@@ -114,10 +114,12 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 3 colors.
+  /// This `R.color` struct is generated, and contains static references to 4 colors.
   struct color {
     /// Color `AccentColor`.
     static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
+    /// Color `Background-F2F2F2`.
+    static let backgroundF2F2F2 = Rswift.ColorResource(bundle: R.hostingBundle, name: "Background-F2F2F2")
     /// Color `Font-333333`.
     static let font333333 = Rswift.ColorResource(bundle: R.hostingBundle, name: "Font-333333")
     /// Color `Font-666666`.
@@ -129,6 +131,15 @@ struct R: Rswift.Validatable {
     @available(iOS 11.0, *)
     static func accentColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
       return UIKit.UIColor(resource: R.color.accentColor, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "Background-F2F2F2", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func backgroundF2F2F2(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.backgroundF2F2F2, compatibleWith: traitCollection)
     }
     #endif
 
@@ -155,6 +166,14 @@ struct R: Rswift.Validatable {
     @available(watchOSApplicationExtension 4.0, *)
     static func accentColor(_: Void = ()) -> UIKit.UIColor? {
       return UIKit.UIColor(named: R.color.accentColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "Background-F2F2F2", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func backgroundF2F2F2(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.backgroundF2F2F2.name)
     }
     #endif
 
@@ -318,6 +337,7 @@ struct _R: Rswift.Validatable {
 
       static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "Background-F2F2F2", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'Background-F2F2F2' is used in storyboard 'Main', but couldn't be loaded.") }
           if UIKit.UIColor(named: "Font-333333", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'Font-333333' is used in storyboard 'Main', but couldn't be loaded.") }
           if UIKit.UIColor(named: "Font-666666", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'Font-666666' is used in storyboard 'Main', but couldn't be loaded.") }
         }
