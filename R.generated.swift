@@ -114,10 +114,14 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 1 colors.
+  /// This `R.color` struct is generated, and contains static references to 3 colors.
   struct color {
     /// Color `AccentColor`.
     static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
+    /// Color `Font-333333`.
+    static let font333333 = Rswift.ColorResource(bundle: R.hostingBundle, name: "Font-333333")
+    /// Color `Font-666666`.
+    static let font666666 = Rswift.ColorResource(bundle: R.hostingBundle, name: "Font-666666")
 
     #if os(iOS) || os(tvOS)
     /// `UIColor(named: "AccentColor", bundle: ..., traitCollection: ...)`
@@ -128,11 +132,45 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "Font-333333", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func font333333(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.font333333, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "Font-666666", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func font666666(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.font666666, compatibleWith: traitCollection)
+    }
+    #endif
+
     #if os(watchOS)
     /// `UIColor(named: "AccentColor", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
     static func accentColor(_: Void = ()) -> UIKit.UIColor? {
       return UIKit.UIColor(named: R.color.accentColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "Font-333333", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func font333333(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.font333333.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "Font-666666", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func font666666(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.font666666.name)
     }
     #endif
 
@@ -274,6 +312,8 @@ struct _R: Rswift.Validatable {
 
       static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
+          if UIKit.UIColor(named: "Font-333333", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'Font-333333' is used in storyboard 'Main', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "Font-666666", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'Font-666666' is used in storyboard 'Main', but couldn't be loaded.") }
         }
         if _R.storyboard.main().arcHomeDetailViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'arcHomeDetailViewController' could not be loaded from storyboard 'Main' as 'ARCHomeDetailViewController'.") }
         if _R.storyboard.main().arcHomeViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'arcHomeViewController' could not be loaded from storyboard 'Main' as 'ARCHomeViewController'.") }
