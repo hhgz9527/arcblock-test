@@ -28,6 +28,7 @@
 		62B2203525E74A9A00381D62 /* ARCHomeImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2203425E74A9A00381D62 /* ARCHomeImageCell.swift */; };
 		62B2203E25E74BDF00381D62 /* ARCHomeOneImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2203D25E74BDF00381D62 /* ARCHomeOneImageCell.swift */; };
 		62B2204725E74D2700381D62 /* ARCHomeMultiImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2204625E74D2700381D62 /* ARCHomeMultiImageCell.swift */; };
+		62B2205625E74E0800381D62 /* ARCHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2205525E74E0800381D62 /* ARCHomeViewModel.swift */; };
 		95A3D695CBF4D54EE5B29928 /* Pods_ArcBlock_CodeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1B9474BED17220A849C97F /* Pods_ArcBlock_CodeTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		62B2203425E74A9A00381D62 /* ARCHomeImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHomeImageCell.swift; sourceTree = "<group>"; };
 		62B2203D25E74BDF00381D62 /* ARCHomeOneImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHomeOneImageCell.swift; sourceTree = "<group>"; };
 		62B2204625E74D2700381D62 /* ARCHomeMultiImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHomeMultiImageCell.swift; sourceTree = "<group>"; };
+		62B2205525E74E0800381D62 /* ARCHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHomeViewModel.swift; sourceTree = "<group>"; };
 		BE1B9474BED17220A849C97F /* Pods_ArcBlock_CodeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArcBlock_CodeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6877F9E286E8972191EC4E9 /* Pods-ArcBlock-CodeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcBlock-CodeTest.debug.xcconfig"; path = "Target Support Files/Pods-ArcBlock-CodeTest/Pods-ArcBlock-CodeTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F1CA0AF489F6FD0F9C5626D7 /* Pods-ArcBlock-CodeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcBlock-CodeTest.release.xcconfig"; path = "Target Support Files/Pods-ArcBlock-CodeTest/Pods-ArcBlock-CodeTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			children = (
 				62B2201F25E64FAA00381D62 /* View */,
 				62B21F4225E6304C00381D62 /* ARCHomeViewController.swift */,
+				62B2205525E74E0800381D62 /* ARCHomeViewModel.swift */,
 				62B21FEB25E64C4800381D62 /* ARCHomeDetailViewController.swift */,
 			);
 			path = Home;
@@ -497,6 +500,7 @@
 				62B21F4125E6304C00381D62 /* SceneDelegate.swift in Sources */,
 				62B21F7C25E6358300381D62 /* ARCAPI.swift in Sources */,
 				62B21F8225E6370400381D62 /* ARCHomeAPI.swift in Sources */,
+				62B2205625E74E0800381D62 /* ARCHomeViewModel.swift in Sources */,
 				62B21F8B25E637CD00381D62 /* ARCTimeline.swift in Sources */,
 				62B2200725E64D8100381D62 /* R.generated.swift in Sources */,
 				62B21FEC25E64C4800381D62 /* ARCHomeDetailViewController.swift in Sources */,

@@ -7,14 +7,39 @@
 
 import UIKit
 
-class ARCHomeViewController: UIViewController {
+protocol ARCHomeDisplayProtocol: class {
+    func fetchHomeListSuccess(timelines: [ARCTimeline])
+    func fetchHomeListFailed(error: ARCError)
+}
 
+class ARCHomeViewController: UIViewController {
+    private var timelinse: [ARCTimeline]?
+    private var viewModel: ARCHomeViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         title = R.string.arcString.home()
+        setup()
+        fetchData()
     }
+    
+    private func setup() {
+        viewModel = ARCHomeViewModel(viewController: self)
+    }
+    
+    private func fetchData() {
+        viewModel.fetchHomeData()
+    }
+}
 
-
+extension ARCHomeViewController: ARCHomeDisplayProtocol {
+    func fetchHomeListSuccess(timelines: [ARCTimeline]) {
+        timelinse = timelines
+    }
+    
+    func fetchHomeListFailed(error: ARCError) {
+    
+    }
 }
 
