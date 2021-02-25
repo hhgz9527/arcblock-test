@@ -208,10 +208,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 3 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `ARCHomeImageCell`.
     static let arcHomeImageCell: Rswift.ReuseIdentifier<ARCHomeImageCell> = Rswift.ReuseIdentifier(identifier: "ARCHomeImageCell")
+    /// Reuse identifier `ARCHomeOneImageCell`.
+    static let arcHomeOneImageCell: Rswift.ReuseIdentifier<ARCHomeOneImageCell> = Rswift.ReuseIdentifier(identifier: "ARCHomeOneImageCell")
     /// Reuse identifier `ARCHomeTextCell`.
     static let arcHomeTextCell: Rswift.ReuseIdentifier<ARCHomeTextCell> = Rswift.ReuseIdentifier(identifier: "ARCHomeTextCell")
 
