@@ -34,9 +34,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="paP-S1-Iua">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="paP-S1-Iua">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="JKz-J2-1Ax">
+                                    <rect key="frame" x="0.0" y="846" width="414" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ARCHomeTextCell" rowHeight="161" id="Qlc-Tq-pWN" customClass="ARCHomeTextCell" customModule="ArcBlock_CodeTest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="161"/>
@@ -73,6 +78,7 @@
                                                         <constraint firstItem="NII-CM-41o" firstAttribute="top" secondItem="gAV-VH-JQd" secondAttribute="top" constant="16" id="3cj-J1-3SJ"/>
                                                         <constraint firstItem="mRK-JT-iQf" firstAttribute="leading" secondItem="NII-CM-41o" secondAttribute="leading" id="HOs-od-WFO"/>
                                                         <constraint firstItem="Yjq-QK-a1K" firstAttribute="top" secondItem="mRK-JT-iQf" secondAttribute="bottom" constant="4" id="LlO-aG-N9k"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Yjq-QK-a1K" secondAttribute="bottom" constant="15.5" id="fHm-Im-H5h"/>
                                                         <constraint firstItem="mRK-JT-iQf" firstAttribute="trailing" secondItem="NII-CM-41o" secondAttribute="trailing" id="nsL-Jt-ZxH"/>
                                                         <constraint firstItem="mRK-JT-iQf" firstAttribute="top" secondItem="NII-CM-41o" secondAttribute="bottom" constant="3" id="otu-bo-GeI"/>
                                                         <constraint firstItem="NII-CM-41o" firstAttribute="leading" secondItem="gAV-VH-JQd" secondAttribute="leading" constant="16" id="pDY-BD-qST"/>
@@ -281,6 +287,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8gt-Aa-0At"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1P9-Vc-Whm"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -294,6 +304,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="首页" id="LDz-ij-FfZ"/>
                     <connections>
+                        <outlet property="homeTableView" destination="paP-S1-Iua" id="WVK-Ca-8LL"/>
                         <segue destination="8bd-FX-wM4" kind="show" id="qcw-uV-VUu"/>
                     </connections>
                 </viewController>

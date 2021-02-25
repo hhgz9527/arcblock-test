@@ -16,5 +16,10 @@ class ARCHomeTextCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        bgView.cardStyle()
+    }
+    
+    func setup(timeline: ARCTimeline) {
+        titleLabel.text = timeline.content
     }
 }
