@@ -196,6 +196,21 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.image` struct is generated, and contains static references to 1 images.
+  struct image {
+    /// Image `img-placeholder`.
+    static let imgPlaceholder = Rswift.ImageResource(bundle: R.hostingBundle, name: "img-placeholder")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "img-placeholder", bundle: ..., traitCollection: ...)`
+    static func imgPlaceholder(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.imgPlaceholder, compatibleWith: traitCollection)
+    }
+    #endif
+
+    fileprivate init() {}
+  }
+
   /// This `R.info` struct is generated, and contains static references to 1 properties.
   struct info {
     struct uiApplicationSceneManifest {

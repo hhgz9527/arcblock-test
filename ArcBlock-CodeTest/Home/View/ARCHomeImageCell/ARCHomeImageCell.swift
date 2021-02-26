@@ -6,20 +6,24 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ARCHomeImageCell: UITableViewCell {
-    @IBOutlet weak var adMobImageVie: UIView!
+    @IBOutlet weak var adMobImageView: UIImageView!
     @IBOutlet weak var bgView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        bgView.cardStyle()
+        adMobImageView.layer.cornerRadius = 5
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func setup(timeline: ARCTimeline) {
+        guard let imgUrls = timeline.imgUrls, let first = imgUrls.first, let url = URL(string: first) else {
+            adMobImageView.image = R.image.imgPlaceholder()
+            return
+        }
+        adMobImageView.kf.setImage(with: url, placeholder: R.image.imgPlaceholder())
     }
-
 }
