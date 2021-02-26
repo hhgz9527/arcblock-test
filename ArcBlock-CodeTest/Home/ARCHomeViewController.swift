@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ARCHomeDisplayProtocol: class {
+protocol ARCHomeDisplayProtocol {
     func fetchHomeListSuccess(timelines: [ARCTimeline])
     func fetchHomeListFailed(error: ARCError)
 }
@@ -35,6 +35,9 @@ class ARCHomeViewController: UIViewController {
     }
 }
 
+
+// MARK: Table View
+
 extension ARCHomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -51,6 +54,8 @@ extension ARCHomeViewController: UITableViewDelegate, UITableViewDataSource {
         return textCell
     }
 }
+
+// MARK: API
 
 extension ARCHomeViewController: ARCHomeDisplayProtocol {
     func fetchHomeListSuccess(timelines: [ARCTimeline]) {
