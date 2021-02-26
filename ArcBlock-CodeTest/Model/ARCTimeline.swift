@@ -7,9 +7,16 @@
 
 import Foundation
 
+enum ARCTimelineType: String, Codable {
+    case text
+    case img
+    case textImg = "text-img"
+    case textLink = "text-link"
+}
+
 class ARCTimeline: Codable {
     let id: Int?
-    let type: String?
+    let type: ARCTimelineType?
     let content: String?
     let imgUrls: [String?]?
     let link: String?
