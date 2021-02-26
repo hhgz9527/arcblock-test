@@ -15,6 +15,11 @@ enum ARCTimelineType: String, Codable {
 }
 
 class ARCTimeline: Codable {
+    var oneImage: Bool {
+        guard let imgUrls = imgUrls else { return false }
+        return imgUrls.count == 1
+    }
+    
     let id: Int?
     let type: ARCTimelineType?
     let content: String?

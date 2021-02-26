@@ -17,12 +17,16 @@ class ARCHomeOneImageCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        bgView.cardStyle()
+        contentImageView.layer.cornerRadius = 5
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func setup(timeline: ARCTimeline) {
+        titleLabel.text = timeline.content
+        guard let imgUrls = timeline.imgUrls, let first = imgUrls.first, let url = URL(string: first) else {
+            contentImageView.image = R.image.imgPlaceholder()
+            return
+        }
+        contentImageView.kf.setImage(with: url, placeholder: R.image.imgPlaceholder())
     }
-
 }

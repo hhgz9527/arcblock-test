@@ -58,6 +58,13 @@ extension ARCHomeViewController: UITableViewDelegate, UITableViewDataSource {
             let imgCell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.arcHomeImageCell.identifier, for: indexPath) as! ARCHomeImageCell
             imgCell.setup(timeline: timeline[indexPath.row])
             return imgCell
+        case .textImg:
+            if timeline[indexPath.row].oneImage {
+                let oneImgCell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.arcHomeOneImageCell.identifier, for: indexPath) as! ARCHomeOneImageCell
+                oneImgCell.setup(timeline: timeline[indexPath.row])
+                return oneImgCell
+            }
+            return textCell
         default:
             return textCell
         }
