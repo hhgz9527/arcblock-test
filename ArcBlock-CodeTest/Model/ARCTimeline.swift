@@ -15,9 +15,16 @@ enum ARCTimelineType: String, Codable {
 }
 
 class ARCTimeline: Codable {
+    var imageURLs: [URL]? {
+        guard let imgUrls = imgUrls else { return nil }
+        let urls = imgUrls.map { URL(string: $0) }
+        let cleanData = urls.compactMap { $0 }
+        return cleanData
+    }
+    
     var oneImage: Bool {
-        guard let imgUrls = imgUrls else { return false }
-        return imgUrls.count == 1
+        guard let imageURLs = imageURLs else { return false }
+        return imageURLs.count == 1
     }
     
     let id: Int?

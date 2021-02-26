@@ -23,10 +23,6 @@ class ARCHomeOneImageCell: UITableViewCell {
 
     func setup(timeline: ARCTimeline) {
         titleLabel.text = timeline.content
-        guard let imgUrls = timeline.imgUrls, let first = imgUrls.first, let url = URL(string: first) else {
-            contentImageView.image = R.image.imgPlaceholder()
-            return
-        }
-        contentImageView.kf.setImage(with: url, placeholder: R.image.imgPlaceholder())
+        contentImageView.kf.setImage(with: timeline.imageURLs?.first, placeholder: R.image.imgPlaceholder())
     }
 }

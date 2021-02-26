@@ -20,10 +20,6 @@ class ARCHomeImageCell: UITableViewCell {
     }
 
     func setup(timeline: ARCTimeline) {
-        guard let imgUrls = timeline.imgUrls, let first = imgUrls.first, let url = URL(string: first) else {
-            adMobImageView.image = R.image.imgPlaceholder()
-            return
-        }
-        adMobImageView.kf.setImage(with: url, placeholder: R.image.imgPlaceholder())
+        adMobImageView.kf.setImage(with: timeline.imageURLs?.first, placeholder: R.image.imgPlaceholder())
     }
 }
