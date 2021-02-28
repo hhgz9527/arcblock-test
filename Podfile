@@ -7,4 +7,12 @@ target 'ArcBlock-CodeTest' do
   pod 'R.swift'
   pod 'Kingfisher', '~> 6.0'
   pod 'YYText'
+  
+  abstract_target 'Tests' do
+#    inherit! :search_paths
+    target "ArcBlock-CodeTestTests"
+
+    pod 'Quick'
+    pod 'Nimble'
+  end
 end

@@ -31,6 +31,7 @@
 		62B2205625E74E0800381D62 /* ARCHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2205525E74E0800381D62 /* ARCHomeViewModel.swift */; };
 		62B2205D25E7547B00381D62 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2205C25E7547B00381D62 /* UIView+Extension.swift */; };
 		62B2216425EB85D600381D62 /* ARCHomeCollectionImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2216325EB85D600381D62 /* ARCHomeCollectionImageCell.swift */; };
+		667DF647CDAF36F7253A9A05 /* Pods_ArcBlock_CodeTest_Tests_ArcBlock_CodeTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8B6316370D29CF18EF5FB7 /* Pods_ArcBlock_CodeTest_Tests_ArcBlock_CodeTestTests.framework */; };
 		95A3D695CBF4D54EE5B29928 /* Pods_ArcBlock_CodeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1B9474BED17220A849C97F /* Pods_ArcBlock_CodeTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A8B6316370D29CF18EF5FB7 /* Pods_ArcBlock_CodeTest_Tests_ArcBlock_CodeTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArcBlock_CodeTest_Tests_ArcBlock_CodeTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B21F3B25E6304C00381D62 /* ArcBlock-CodeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ArcBlock-CodeTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B21F3E25E6304C00381D62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62B21F4025E6304C00381D62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,8 @@
 		62B2205525E74E0800381D62 /* ARCHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHomeViewModel.swift; sourceTree = "<group>"; };
 		62B2205C25E7547B00381D62 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		62B2216325EB85D600381D62 /* ARCHomeCollectionImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHomeCollectionImageCell.swift; sourceTree = "<group>"; };
+		63CAF0D5927DA4BC44543F2C /* Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests/Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A55E3AAD342B8C3114DEEAD8 /* Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.release.xcconfig"; path = "Target Support Files/Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests/Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		BE1B9474BED17220A849C97F /* Pods_ArcBlock_CodeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArcBlock_CodeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6877F9E286E8972191EC4E9 /* Pods-ArcBlock-CodeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcBlock-CodeTest.debug.xcconfig"; path = "Target Support Files/Pods-ArcBlock-CodeTest/Pods-ArcBlock-CodeTest.debug.xcconfig"; sourceTree = "<group>"; };
 		F1CA0AF489F6FD0F9C5626D7 /* Pods-ArcBlock-CodeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcBlock-CodeTest.release.xcconfig"; path = "Target Support Files/Pods-ArcBlock-CodeTest/Pods-ArcBlock-CodeTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				667DF647CDAF36F7253A9A05 /* Pods_ArcBlock_CodeTest_Tests_ArcBlock_CodeTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +124,8 @@
 			children = (
 				D6877F9E286E8972191EC4E9 /* Pods-ArcBlock-CodeTest.debug.xcconfig */,
 				F1CA0AF489F6FD0F9C5626D7 /* Pods-ArcBlock-CodeTest.release.xcconfig */,
+				63CAF0D5927DA4BC44543F2C /* Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.debug.xcconfig */,
+				A55E3AAD342B8C3114DEEAD8 /* Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -309,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				BE1B9474BED17220A849C97F /* Pods_ArcBlock_CodeTest.framework */,
+				4A8B6316370D29CF18EF5FB7 /* Pods_ArcBlock_CodeTest_Tests_ArcBlock_CodeTestTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -340,9 +348,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62B21F6825E6304F00381D62 /* Build configuration list for PBXNativeTarget "ArcBlock-CodeTestTests" */;
 			buildPhases = (
+				3C7FBCF05BA152E90FC22306 /* [CP] Check Pods Manifest.lock */,
 				62B21F4D25E6304F00381D62 /* Sources */,
 				62B21F4E25E6304F00381D62 /* Frameworks */,
 				62B21F4F25E6304F00381D62 /* Resources */,
+				F9B307918C6104838271E192 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -466,6 +476,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3C7FBCF05BA152E90FC22306 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		62B21FFF25E64D4600381D62 /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -480,7 +512,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				"$SRCROOT/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -501,6 +533,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArcBlock-CodeTest/Pods-ArcBlock-CodeTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9B307918C6104838271E192 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests/Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests/Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests/Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -749,6 +798,7 @@
 		};
 		62B21F6925E6304F00381D62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63CAF0D5927DA4BC44543F2C /* Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -770,6 +820,7 @@
 		};
 		62B21F6A25E6304F00381D62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A55E3AAD342B8C3114DEEAD8 /* Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

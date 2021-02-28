@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_ArcBlock_CodeTest_Tests_ArcBlock_CodeTestTests : NSObject
+@end
+@implementation PodsDummy_Pods_ArcBlock_CodeTest_Tests_ArcBlock_CodeTestTests
+@end
