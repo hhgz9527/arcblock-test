@@ -9,12 +9,14 @@ PODS:
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
   - SwiftyJSON (5.0.0)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
   - Kingfisher (~> 6.0)
   - Moya
   - R.swift
   - SwiftyJSON
+  - YYText
 
 SPEC REPOS:
   trunk:
@@ -24,6 +26,7 @@ SPEC REPOS:
     - R.swift
     - R.swift.Library
     - SwiftyJSON
+    - YYText
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
@@ -32,7 +35,8 @@ SPEC CHECKSUMS:
   R.swift: 56ec7e3aef34b9eee47a659e42462db2c1cc5ac3
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 4cdcc76495e451d9caa53cb4047e162a18fd260f
+PODFILE CHECKSUM: b711ad44ffc2ae1e5eb7296b3901cd055c6bb630
 
 COCOAPODS: 1.10.1

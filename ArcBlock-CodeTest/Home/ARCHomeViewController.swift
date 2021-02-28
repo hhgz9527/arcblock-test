@@ -68,7 +68,11 @@ extension ARCHomeViewController: UITableViewDelegate, UITableViewDataSource {
                 multiImageCell.setup(timeline: timeline[indexPath.row])
                 return multiImageCell
             }
+        case .textLink:
+            textCell.setup(timeline: timeline[indexPath.row])
+            return textCell
         default:
+            // handle empty case
             return textCell
         }
         

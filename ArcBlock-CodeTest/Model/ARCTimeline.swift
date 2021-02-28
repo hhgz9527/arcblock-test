@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ARCTimelineType: String, Codable {
+enum ARCTimelineType: String, Codable, Equatable {
     case text
     case img
     case textImg = "text-img"

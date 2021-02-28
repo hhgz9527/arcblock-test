@@ -21,5 +21,11 @@ class ARCHomeTextCell: UITableViewCell {
     
     func setup(timeline: ARCTimeline) {
         titleLabel.text = timeline.content
+        guard let type = timeline.type else { return }
+        if type == .textLink {
+            contentLabel.text = "查看链接"
+        } else {
+            contentLabel.text = nil
+        }
     }
 }

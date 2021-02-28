@@ -6,4 +6,5 @@ target 'ArcBlock-CodeTest' do
   pod 'SwiftyJSON'
   pod 'R.swift'
   pod 'Kingfisher', '~> 6.0'
+  pod 'YYText'
 end
