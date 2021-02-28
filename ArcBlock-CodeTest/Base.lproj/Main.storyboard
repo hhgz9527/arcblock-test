@@ -242,21 +242,35 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="96" id="u6k-cy-ype"/>
                                                             </constraints>
-                                                            <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PTz-jb-lGK">
+                                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PTz-jb-lGK">
                                                                 <size key="itemSize" width="130" height="101"/>
                                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                             </collectionViewFlowLayout>
                                                             <cells>
-                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0cD-kG-dSO">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="101"/>
+                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ARCHomeCollectionImageCell" id="0cD-kG-dSO" customClass="ARCHomeCollectionImageCell" customModule="ArcBlock_CodeTest" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="-2.5" width="130" height="101"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nmk-K1-RqY">
                                                                         <rect key="frame" x="0.0" y="0.0" width="130" height="101"/>
                                                                         <autoresizingMask key="autoresizingMask"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mPo-qG-x6B">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="101"/>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="mPo-qG-x6B" secondAttribute="trailing" id="5t3-fb-QpF"/>
+                                                                            <constraint firstItem="mPo-qG-x6B" firstAttribute="top" secondItem="nmk-K1-RqY" secondAttribute="top" id="dLN-DI-xnw"/>
+                                                                            <constraint firstItem="mPo-qG-x6B" firstAttribute="leading" secondItem="nmk-K1-RqY" secondAttribute="leading" id="m5t-YH-xsO"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="mPo-qG-x6B" secondAttribute="bottom" id="yZM-Ki-eUs"/>
+                                                                        </constraints>
                                                                     </collectionViewCellContentView>
                                                                     <size key="customSize" width="130" height="101"/>
+                                                                    <connections>
+                                                                        <outlet property="contentImageView" destination="mPo-qG-x6B" id="iJW-Bc-Dlu"/>
+                                                                    </connections>
                                                                 </collectionViewCell>
                                                             </cells>
                                                         </collectionView>
@@ -286,6 +300,12 @@
                                                 <constraint firstAttribute="bottom" secondItem="2c7-TL-HoU" secondAttribute="bottom" constant="8" id="YZ5-eT-TOg"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="bgView" destination="2c7-TL-HoU" id="48t-Xz-tbF"/>
+                                            <outlet property="imageCollectionView" destination="kje-V7-I45" id="xQ4-0B-qJH"/>
+                                            <outlet property="titleLabel" destination="LRj-Ns-f8j" id="3Ao-Um-PTC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
