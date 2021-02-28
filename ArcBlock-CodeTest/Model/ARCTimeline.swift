@@ -23,8 +23,8 @@ class ARCTimeline: Codable {
     }
     
     var oneImage: Bool {
-        guard let imageURLs = imageURLs else { return false }
-        return imageURLs.count == 1
+        guard let type = type, type == .textImg, let imageURLs = imageURLs else { return false }
+        return imageURLs.count <= 1
     }
     
     let id: Int?

@@ -29,10 +29,27 @@ class ARCTimelineBuilder {
         return self
     }
     
-    func addTextImageStyle() -> ARCTimelineBuilder {
-        json = """
-            {"id":1,"type":"text-img","content":"首先，感谢您抽出宝贵的时间进行 Coding Test, 这个 Coding Test 的目标是实现一个多类型的列表页以及对应的详情页面，您可以自由发挥实现整体效果，我们将根据您的最终作品做一个评估考核。"}
+    func addTextImageStyle(imageCount: Int) -> ARCTimelineBuilder {
+        json = json + """
+            {"id":1,"type":"text-img","content":"首先，感谢您抽出宝贵的时间进行 Coding Test, 这个 Coding Test 的目标是实现一个多类型的列表页以及对应的详情页面，您可以自由发挥实现整体效果，我们将根据您的最终作品做一个评估考核。"
             """
+        
+        if imageCount == 1 {
+            json = json + ", \"imgUrls\": [\"1\"]}"
+        } else if imageCount == 0 {
+            json = json + "}"
+        } else {
+            json = json + ", \"imgUrls\": "
+            for index in 0..<imageCount {
+                if index == 0 {
+                    json = json + "[\"1\","
+                } else if index == imageCount - 1 {
+                    json = json + "\"1\"]}"
+                } else {
+                    json = json + "\"1\","
+                }
+            }
+        }
         return self
     }
     
