@@ -13,7 +13,6 @@
 		62B21F4625E6304C00381D62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B21F4425E6304C00381D62 /* Main.storyboard */; };
 		62B21F4825E6304E00381D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B21F4725E6304E00381D62 /* Assets.xcassets */; };
 		62B21F4B25E6304E00381D62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B21F4925E6304E00381D62 /* LaunchScreen.storyboard */; };
-		62B21F5625E6304F00381D62 /* ArcBlock_CodeTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B21F5525E6304F00381D62 /* ArcBlock_CodeTestTests.swift */; };
 		62B21F6125E6304F00381D62 /* ArcBlock_CodeTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B21F6025E6304F00381D62 /* ArcBlock_CodeTestUITests.swift */; };
 		62B21F7C25E6358300381D62 /* ARCAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B21F7B25E6358300381D62 /* ARCAPI.swift */; };
 		62B21F8225E6370400381D62 /* ARCHomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B21F8125E6370400381D62 /* ARCHomeAPI.swift */; };
@@ -31,6 +30,9 @@
 		62B2205625E74E0800381D62 /* ARCHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2205525E74E0800381D62 /* ARCHomeViewModel.swift */; };
 		62B2205D25E7547B00381D62 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2205C25E7547B00381D62 /* UIView+Extension.swift */; };
 		62B2216425EB85D600381D62 /* ARCHomeCollectionImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2216325EB85D600381D62 /* ARCHomeCollectionImageCell.swift */; };
+		62B2218325EBA71C00381D62 /* ARCTimelineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2218225EBA71C00381D62 /* ARCTimelineSpec.swift */; };
+		62B2218F25EBA77500381D62 /* ARCTimelineBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2218E25EBA77500381D62 /* ARCTimelineBuilder.swift */; };
+		62B2219825EBA8A200381D62 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2219725EBA8A200381D62 /* String+Extension.swift */; };
 		667DF647CDAF36F7253A9A05 /* Pods_ArcBlock_CodeTest_Tests_ArcBlock_CodeTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8B6316370D29CF18EF5FB7 /* Pods_ArcBlock_CodeTest_Tests_ArcBlock_CodeTestTests.framework */; };
 		95A3D695CBF4D54EE5B29928 /* Pods_ArcBlock_CodeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1B9474BED17220A849C97F /* Pods_ArcBlock_CodeTest.framework */; };
 /* End PBXBuildFile section */
@@ -63,7 +65,6 @@
 		62B21F4A25E6304E00381D62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62B21F4C25E6304E00381D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62B21F5125E6304F00381D62 /* ArcBlock-CodeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ArcBlock-CodeTestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		62B21F5525E6304F00381D62 /* ArcBlock_CodeTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcBlock_CodeTestTests.swift; sourceTree = "<group>"; };
 		62B21F5725E6304F00381D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62B21F5C25E6304F00381D62 /* ArcBlock-CodeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ArcBlock-CodeTestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B21F6025E6304F00381D62 /* ArcBlock_CodeTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcBlock_CodeTestUITests.swift; sourceTree = "<group>"; };
@@ -85,6 +86,9 @@
 		62B2205525E74E0800381D62 /* ARCHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHomeViewModel.swift; sourceTree = "<group>"; };
 		62B2205C25E7547B00381D62 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		62B2216325EB85D600381D62 /* ARCHomeCollectionImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHomeCollectionImageCell.swift; sourceTree = "<group>"; };
+		62B2218225EBA71C00381D62 /* ARCTimelineSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCTimelineSpec.swift; sourceTree = "<group>"; };
+		62B2218E25EBA77500381D62 /* ARCTimelineBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCTimelineBuilder.swift; sourceTree = "<group>"; };
+		62B2219725EBA8A200381D62 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		63CAF0D5927DA4BC44543F2C /* Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests/Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A55E3AAD342B8C3114DEEAD8 /* Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.release.xcconfig"; path = "Target Support Files/Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests/Pods-ArcBlock-CodeTest-Tests-ArcBlock-CodeTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		BE1B9474BED17220A849C97F /* Pods_ArcBlock_CodeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArcBlock_CodeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,7 +178,8 @@
 		62B21F5425E6304F00381D62 /* ArcBlock-CodeTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				62B21F5525E6304F00381D62 /* ArcBlock_CodeTestTests.swift */,
+				62B2218D25EBA76B00381D62 /* Builder */,
+				62B2218125EBA70B00381D62 /* Model */,
 				62B21F5725E6304F00381D62 /* Info.plist */,
 			);
 			path = "ArcBlock-CodeTestTests";
@@ -299,6 +304,7 @@
 		62B2205A25E7546D00381D62 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				62B2219625EBA89800381D62 /* String+Extension */,
 				62B2205B25E7546F00381D62 /* UIView+Extension */,
 			);
 			path = Extension;
@@ -310,6 +316,30 @@
 				62B2205C25E7547B00381D62 /* UIView+Extension.swift */,
 			);
 			path = "UIView+Extension";
+			sourceTree = "<group>";
+		};
+		62B2218125EBA70B00381D62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62B2218225EBA71C00381D62 /* ARCTimelineSpec.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		62B2218D25EBA76B00381D62 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				62B2218E25EBA77500381D62 /* ARCTimelineBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		62B2219625EBA89800381D62 /* String+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				62B2219725EBA8A200381D62 /* String+Extension.swift */,
+			);
+			path = "String+Extension";
 			sourceTree = "<group>";
 		};
 		88B77BC556850415F6C54744 /* Frameworks */ = {
@@ -512,7 +542,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -562,6 +592,7 @@
 				62B21FDC25E6411400381D62 /* ARCLogger.swift in Sources */,
 				62B21F4325E6304C00381D62 /* ARCHomeViewController.swift in Sources */,
 				62B2204725E74D2700381D62 /* ARCHomeMultiImageCell.swift in Sources */,
+				62B2219825EBA8A200381D62 /* String+Extension.swift in Sources */,
 				62B2203E25E74BDF00381D62 /* ARCHomeOneImageCell.swift in Sources */,
 				62B2216425EB85D600381D62 /* ARCHomeCollectionImageCell.swift in Sources */,
 				62B2203525E74A9A00381D62 /* ARCHomeImageCell.swift in Sources */,
@@ -584,7 +615,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62B21F5625E6304F00381D62 /* ArcBlock_CodeTestTests.swift in Sources */,
+				62B2218325EBA71C00381D62 /* ARCTimelineSpec.swift in Sources */,
+				62B2218F25EBA77500381D62 /* ARCTimelineBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
